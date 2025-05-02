@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-gray-800 min-h-screen;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  section {
+    @apply transition-all duration-500;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-dark text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105;
+  }
+  
+  .section-title {
+    @apply text-4xl font-bold text-primary mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-gray-600 mb-8;
+  }
+
+  .nav-link {
+    @apply relative px-4 py-2 transition-all duration-300;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300;
+    transform: translateX(-50%);
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .nav-link.active {
+    @apply text-primary;
+  }
+
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .mobile-nav-link {
+    @apply block px-4 py-2 text-gray-800 hover:bg-gray-100;
+  }
+
+  .mobile-nav-link.active {
+    @apply bg-primary text-white;
+  }
+
+  .section {
+    @apply min-h-screen flex items-center justify-center;
+  }
+
+  .section-content {
+    @apply transform transition-all duration-500;
+  }
+
+  .section.active {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .section.inactive {
+    @apply opacity-0 translate-y-20;
+  }
+
+  .hero-section {
+    @apply relative h-screen flex items-center justify-center;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-black bg-opacity-50;
+  }
+
+  .hero-background {
+    @apply absolute inset-0 bg-cover bg-center;
+  }
+
+  .hero-content {
+    @apply relative z-10 text-center text-white;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-dark;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-in-out;
+  }
+
+  .loading {
+    @apply fixed inset-0 flex items-center justify-center bg-white bg-opacity-75 z-50;
+  }
+
+  .loading-spinner {
+    @apply w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin;
+  }
+}
