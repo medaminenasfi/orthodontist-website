@@ -24,36 +24,36 @@ const StyledAccordion = styled(Accordion)(({ theme }) => ({
 
 const faqs = [
   {
-    question: 'At what age should my child first see an orthodontist?',
-    answer: 'The American Association of Orthodontists recommends that children have their first orthodontic evaluation by age 7. This allows us to identify any potential issues early and determine the best time to begin treatment.',
+    question: 'À quel âge mon enfant devrait-il consulter un orthodontiste pour la première fois ?',
+    answer: 'L\'Association Américaine des Orthodontistes recommande que les enfants aient leur première évaluation orthodontique à l\'âge de 7 ans. Cela nous permet d\'identifier tout problème potentiel tôt et de déterminer le meilleur moment pour commencer le traitement.',
   },
   {
-    question: 'How long does orthodontic treatment typically take?',
-    answer: 'Treatment duration varies depending on the individual case, but most treatments take between 12-24 months. Factors that affect treatment time include the complexity of the case, the type of treatment, and how well the patient follows instructions.',
+    question: 'Combien de temps dure généralement un traitement orthodontique ?',
+    answer: 'La durée du traitement varie selon le cas individuel, mais la plupart des traitements durent entre 12 et 24 mois. Les facteurs qui affectent la durée du traitement incluent la complexité du cas, le type de traitement et la façon dont le patient suit les instructions.',
   },
   {
-    question: 'What is the difference between traditional braces and Invisalign?',
-    answer: 'Traditional braces use metal brackets and wires to move teeth, while Invisalign uses a series of clear, removable aligners. Both methods are effective, but Invisalign offers more discretion and convenience. The best option depends on your specific needs and goals.',
+    question: 'Quelle est la différence entre les appareils dentaires traditionnels et Invisalign ?',
+    answer: 'Les appareils dentaires traditionnels utilisent des brackets et des fils métalliques pour déplacer les dents, tandis qu\'Invisalign utilise une série de gouttières transparentes amovibles. Les deux méthodes sont efficaces, mais Invisalign offre plus de discrétion et de commodité. La meilleure option dépend de vos besoins et objectifs spécifiques.',
   },
   {
-    question: 'Do braces hurt?',
-    answer: 'You may experience some discomfort when braces are first placed and after adjustments, but this is usually mild and temporary. Over-the-counter pain relievers can help manage any discomfort. Most patients adjust to their braces within a few days.',
+    question: 'Les appareils dentaires font-ils mal ?',
+    answer: 'Vous pouvez ressentir un certain inconfort lorsque les appareils sont posés pour la première fois et après les ajustements, mais cela est généralement léger et temporaire. Les analgésiques en vente libre peuvent aider à gérer tout inconfort. La plupart des patients s\'adaptent à leurs appareils en quelques jours.',
   },
   {
-    question: 'How often will I need to come in for appointments?',
-    answer: 'Most patients with braces need to visit every 4-8 weeks for adjustments. Invisalign patients typically visit every 6-8 weeks to receive new aligners and monitor progress.',
+    question: 'À quelle fréquence devrai-je venir pour des rendez-vous ?',
+    answer: 'La plupart des patients avec des appareils dentaires doivent venir tous les 4 à 8 semaines pour des ajustements. Les patients Invisalign viennent généralement toutes les 6 à 8 semaines pour recevoir de nouvelles gouttières et surveiller les progrès.',
   },
   {
-    question: 'Can adults get braces?',
-    answer: 'Absolutely! It\'s never too late to improve your smile. Many adults choose orthodontic treatment to correct alignment issues or improve their appearance. We offer various treatment options suitable for adults.',
+    question: 'Les adultes peuvent-ils porter des appareils dentaires ?',
+    answer: 'Absolument ! Il n\'est jamais trop tard pour améliorer votre sourire. De nombreux adultes choisissent un traitement orthodontique pour corriger des problèmes d\'alignement ou améliorer leur apparence. Nous proposons diverses options de traitement adaptées aux adultes.',
   },
   {
-    question: 'How do I care for my teeth during orthodontic treatment?',
-    answer: 'Maintaining good oral hygiene is crucial during treatment. Brush after every meal, floss daily, and use any additional cleaning tools recommended by your orthodontist. Avoid hard, sticky, or chewy foods that could damage your braces.',
+    question: 'Comment prendre soin de mes dents pendant le traitement orthodontique ?',
+    answer: 'Maintenir une bonne hygiène bucco-dentaire est crucial pendant le traitement. Brossez-vous les dents après chaque repas, utilisez le fil dentaire quotidiennement et utilisez tous les outils de nettoyage supplémentaires recommandés par votre orthodontiste. Évitez les aliments durs, collants ou mous qui pourraient endommager vos appareils.',
   },
   {
-    question: 'What happens after my braces come off?',
-    answer: 'After braces are removed, you\'ll need to wear a retainer to maintain your new smile. We\'ll provide specific instructions on retainer wear and schedule follow-up appointments to monitor your progress.',
+    question: 'Que se passe-t-il après le retrait de mes appareils dentaires ?',
+    answer: 'Après le retrait des appareils, vous devrez porter une contention pour maintenir votre nouveau sourire. Nous vous fournirons des instructions spécifiques sur le port de la contention et programmerons des rendez-vous de suivi pour surveiller vos progrès.',
   },
 ];
 
@@ -77,10 +77,10 @@ const FAQ = () => {
           transition={{ duration: 0.8 }}
         >
           <Typography variant="h2" align="center" gutterBottom>
-            Frequently Asked Questions
+            Questions Fréquemment Posées
           </Typography>
           <Typography variant="h5" align="center" color="text.secondary" paragraph>
-            Find answers to common questions about orthodontic treatment
+            Trouvez des réponses aux questions courantes sur le traitement orthodontique
           </Typography>
         </motion.div>
 
@@ -113,7 +113,7 @@ const FAQ = () => {
 
           <Box sx={{ mt: 4, textAlign: 'center' }}>
             <Typography variant="h6" gutterBottom>
-              Still have questions?
+              Vous avez encore des questions ?
             </Typography>
             <Button
               variant="contained"
@@ -127,7 +127,7 @@ const FAQ = () => {
                 },
               }}
             >
-              Contact Us
+              Contactez-nous
             </Button>
           </Box>
         </motion.div>

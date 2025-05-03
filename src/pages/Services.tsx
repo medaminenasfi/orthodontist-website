@@ -22,13 +22,11 @@ const Services = () => {
             align="center"
             gutterBottom
             sx={{
-              background: 'linear-gradient(45deg, #fff 30%, #aaa 90%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
+              color: 'text.primary',
               fontWeight: 'bold',
             }}
           >
-            Our Services
+            Nos Services
           </Typography>
           <Box
             sx={{
@@ -41,43 +39,37 @@ const Services = () => {
         </motion.div>
 
         {/* Main Services Grid */}
-        <Grid container spacing={4} sx={{ mt: 4 }}>
+        <Grid container spacing={4} sx={{ mt: 4 }} ref={ref}>
           {[
             {
-              title: "Braces Treatment",
-              description: "Traditional metal braces for effective teeth alignment",
-              icon: "🦷",
-              image: "/images/braces.jpg"
+              title: "Traitement par Appareil Dentaire",
+              description: "Appareils dentaires traditionnels pour un alignement efficace des dents",
+              icon: "🦷"
             },
             {
               title: "Invisalign",
-              description: "Clear aligners for discreet teeth straightening",
-              icon: "✨",
-              image: "/images/invisalign.jpg"
+              description: "Gouttières transparentes pour un redressement discret des dents",
+              icon: "✨"
             },
             {
-              title: "Retainers",
-              description: "Custom retainers to maintain your perfect smile",
-              icon: "🔒",
-              image: "/images/retainers.jpg"
+              title: "Contention",
+              description: "Contentions personnalisées pour maintenir votre sourire parfait",
+              icon: "🔒"
             },
             {
-              title: "Emergency Care",
-              description: "Immediate attention for orthodontic emergencies",
-              icon: "🚑",
-              image: "/images/emergency.jpg"
+              title: "Urgences",
+              description: "Prise en charge immédiate des urgences orthodontiques",
+              icon: "🚑"
             },
             {
-              title: "Child Orthodontics",
-              description: "Early intervention for growing smiles",
-              icon: "👶",
-              image: "/images/child.jpg"
+              title: "Orthodontie Pédiatrique",
+              description: "Intervention précoce pour les sourires en croissance",
+              icon: "👶"
             },
             {
-              title: "Adult Orthodontics",
-              description: "Specialized care for adult patients",
-              icon: "👨",
-              image: "/images/adult.jpg"
+              title: "Orthodontie Adulte",
+              description: "Soins spécialisés pour les patients adultes",
+              icon: "👨"
             }
           ].map((service, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
@@ -99,52 +91,13 @@ const Services = () => {
                     },
                   }}
                 >
-                  <Box
-                    sx={{
-                      position: 'relative',
-                      height: 200,
-                      overflow: 'hidden',
-                    }}
-                  >
-                    <Box
-                      component="img"
-                      src={service.image}
-                      alt={service.title}
-                      sx={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        transition: 'transform 0.3s',
-                        '&:hover': {
-                          transform: 'scale(1.1)',
-                        },
-                      }}
-                    />
-                    <Box
-                      sx={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)',
-                      }}
-                    />
-                    <Typography
-                      variant="h2"
-                      sx={{
-                        position: 'absolute',
-                        top: 16,
-                        right: 16,
-                      }}
-                    >
-                      {service.icon}
-                    </Typography>
-                  </Box>
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography variant="h5" component="h3" gutterBottom>
-                      {service.title}
-                    </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
+                      <Typography variant="h2">{service.icon}</Typography>
+                      <Typography variant="h5" component="h3" sx={{ color: 'text.primary' }}>
+                        {service.title}
+                      </Typography>
+                    </Box>
                     <Typography variant="body2" color="text.secondary" paragraph>
                       {service.description}
                     </Typography>
@@ -153,7 +106,7 @@ const Services = () => {
                       color="primary"
                       sx={{ mt: 2 }}
                     >
-                      Learn More
+                      En Savoir Plus
                     </Button>
                   </CardContent>
                 </Card>
@@ -168,30 +121,30 @@ const Services = () => {
             variant="h3"
             align="center"
             gutterBottom
-            sx={{ color: 'text.secondary' }}
+            sx={{ color: 'text.primary' }}
           >
-            Additional Services
+            Services Complémentaires
           </Typography>
           <Grid container spacing={4} sx={{ mt: 2 }}>
             {[
               {
-                title: "Digital Impressions",
-                description: "Advanced 3D scanning technology for precise treatment planning",
+                title: "Empreintes Numériques",
+                description: "Technologie de numérisation 3D avancée pour une planification précise du traitement",
                 icon: "📱"
               },
               {
-                title: "Teeth Whitening",
-                description: "Professional whitening treatments for a brighter smile",
+                title: "Blanchiment Dentaire",
+                description: "Traitements de blanchiment professionnels pour un sourire plus éclatant",
                 icon: "✨"
               },
               {
-                title: "Oral Hygiene",
-                description: "Comprehensive care and education for optimal dental health",
+                title: "Hygiène Bucco-Dentaire",
+                description: "Soins et éducation complets pour une santé dentaire optimale",
                 icon: "🪥"
               },
               {
                 title: "Consultation",
-                description: "Personalized treatment planning and expert advice",
+                description: "Planification de traitement personnalisée et conseils d'experts",
                 icon: "💬"
               }
             ].map((service, index) => (
@@ -215,7 +168,7 @@ const Services = () => {
                       <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
                         <Typography variant="h2">{service.icon}</Typography>
                         <Box>
-                          <Typography variant="h6" gutterBottom>
+                          <Typography variant="h6" gutterBottom sx={{ color: 'text.primary' }}>
                             {service.title}
                           </Typography>
                           <Typography variant="body2" color="text.secondary">

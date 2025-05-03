@@ -51,13 +51,13 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   };
 
   const menuItems = [
-    { text: 'About', id: 'about' },
+    { text: 'À Propos', id: 'about' },
     { text: 'Services', id: 'services' },
-    { text: 'Testimonials', id: 'testimonials' },
-    { text: 'Gallery', id: 'gallery' },
+    { text: 'Témoignages', id: 'testimonials' },
+    { text: 'Galerie', id: 'gallery' },
     { text: 'FAQ', id: 'faq' },
     { text: 'Contact', id: 'contact' },
-    { text: 'Appointment', id: 'appointment' },
+    { text: 'Rendez-vous', id: 'appointment' },
   ];
 
   const drawer = (
@@ -90,7 +90,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               fontWeight: 'bold',
             }}
           >
-            Dr. Smith Orthodontics
+            Orthodontie Dr. Smith
           </Typography>
           {isMobile ? (
             <IconButton

@@ -68,10 +68,10 @@ const Appointment = () => {
           transition={{ duration: 0.8 }}
         >
           <Typography variant="h2" align="center" gutterBottom>
-            Book Your Appointment
+            Prenez Rendez-vous
           </Typography>
           <Typography variant="h5" align="center" color="text.secondary" paragraph>
-            Schedule a consultation with our expert orthodontist
+            Planifiez une consultation avec notre orthodontiste expert
           </Typography>
         </motion.div>
 
@@ -79,19 +79,19 @@ const Appointment = () => {
           <Grid item xs={12} md={6}>
             <StyledPaper>
               <Typography variant="h5" gutterBottom>
-                Contact Information
+                Informations de Contact
               </Typography>
               <Typography paragraph>
-                <strong>Address:</strong> 123 Dental Street, Suite 100<br />
-                <strong>Phone:</strong> (555) 123-4567<br />
-                <strong>Email:</strong> info@drsmithortho.com<br />
-                <strong>Hours:</strong> Mon-Fri: 9am-5pm, Sat: 9am-1pm
+                <strong>Adresse :</strong> 123 Rue Dentaire, Suite 100<br />
+                <strong>Téléphone :</strong> (555) 123-4567<br />
+                <strong>Email :</strong> info@drsmithortho.com<br />
+                <strong>Horaires :</strong> Lun-Ven: 9h-17h, Sam: 9h-13h
               </Typography>
               <Typography variant="h6" gutterBottom>
-                Emergency Contact
+                Urgences
               </Typography>
               <Typography paragraph>
-                For dental emergencies, please call our emergency line at (555) 987-6543
+                Pour les urgences dentaires, veuillez appeler notre ligne d'urgence au (555) 987-6543
               </Typography>
             </StyledPaper>
           </Grid>
@@ -100,7 +100,7 @@ const Appointment = () => {
             <StyledPaper>
               {submitted ? (
                 <Alert severity="success" sx={{ mb: 2 }}>
-                  Thank you for your appointment request! We will contact you shortly to confirm your booking.
+                  Merci pour votre demande de rendez-vous ! Nous vous contacterons bientôt pour confirmer votre réservation.
                 </Alert>
               ) : (
                 <form onSubmit={handleSubmit}>
@@ -109,7 +109,7 @@ const Appointment = () => {
                       <TextField
                         required
                         fullWidth
-                        label="Full Name"
+                        label="Nom Complet"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
@@ -130,7 +130,7 @@ const Appointment = () => {
                       <TextField
                         required
                         fullWidth
-                        label="Phone"
+                        label="Téléphone"
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
@@ -145,11 +145,11 @@ const Appointment = () => {
                           onChange={handleChange}
                           label="Service"
                         >
-                          <MenuItem value="consultation">Initial Consultation</MenuItem>
-                          <MenuItem value="braces">Traditional Braces</MenuItem>
+                          <MenuItem value="consultation">Consultation Initiale</MenuItem>
+                          <MenuItem value="braces">Appareil Dentaire Traditionnel</MenuItem>
                           <MenuItem value="invisalign">Invisalign</MenuItem>
-                          <MenuItem value="retainers">Retainers</MenuItem>
-                          <MenuItem value="follow-up">Follow-up Visit</MenuItem>
+                          <MenuItem value="retainers">Contention</MenuItem>
+                          <MenuItem value="follow-up">Visite de Suivi</MenuItem>
                         </Select>
                       </FormControl>
                     </Grid>
@@ -157,7 +157,7 @@ const Appointment = () => {
                       <TextField
                         required
                         fullWidth
-                        label="Preferred Date"
+                        label="Date Préférée"
                         name="date"
                         type="date"
                         value={formData.date}

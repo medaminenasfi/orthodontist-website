@@ -68,10 +68,10 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
         >
           <Typography variant="h2" align="center" gutterBottom>
-            Contact Us
+            Contactez-nous
           </Typography>
           <Typography variant="h5" align="center" color="text.secondary" paragraph>
-            Get in touch with our team
+            Prenez contact avec notre équipe
           </Typography>
         </motion.div>
 
@@ -85,30 +85,30 @@ const Contact = () => {
             <Grid item xs={12} md={6}>
               <StyledPaper>
                 <Typography variant="h5" gutterBottom>
-                  Office Information
+                  Informations du Cabinet
                 </Typography>
                 <Typography paragraph>
-                  <strong>Address:</strong><br />
-                  123 Dental Street, Suite 100<br />
-                  City, State 12345
+                  <strong>Adresse :</strong><br />
+                  123 Rue Dentaire, Suite 100<br />
+                  Ville, État 12345
                 </Typography>
                 <Typography paragraph>
-                  <strong>Phone:</strong><br />
+                  <strong>Téléphone :</strong><br />
                   (555) 123-4567
                 </Typography>
                 <Typography paragraph>
-                  <strong>Email:</strong><br />
+                  <strong>Email :</strong><br />
                   info@drsmithortho.com
                 </Typography>
                 <Typography paragraph>
-                  <strong>Hours:</strong><br />
-                  Monday - Friday: 9:00 AM - 5:00 PM<br />
-                  Saturday: 9:00 AM - 1:00 PM<br />
-                  Sunday: Closed
+                  <strong>Horaires :</strong><br />
+                  Lundi - Vendredi : 9h00 - 17h00<br />
+                  Samedi : 9h00 - 13h00<br />
+                  Dimanche : Fermé
                 </Typography>
                 <Typography paragraph>
-                  <strong>Emergency Contact:</strong><br />
-                  For dental emergencies, please call our emergency line at (555) 987-6543
+                  <strong>Urgences :</strong><br />
+                  Pour les urgences dentaires, veuillez appeler notre ligne d'urgence au (555) 987-6543
                 </Typography>
               </StyledPaper>
             </Grid>
@@ -117,7 +117,7 @@ const Contact = () => {
               <StyledPaper>
                 {submitted ? (
                   <Alert severity="success" sx={{ mb: 2 }}>
-                    Thank you for your message! We will get back to you as soon as possible.
+                    Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
                   </Alert>
                 ) : (
                   <form onSubmit={handleSubmit}>
@@ -126,7 +126,7 @@ const Contact = () => {
                         <TextField
                           required
                           fullWidth
-                          label="Name"
+                          label="Nom"
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
@@ -147,7 +147,7 @@ const Contact = () => {
                         <TextField
                           required
                           fullWidth
-                          label="Phone"
+                          label="Téléphone"
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
@@ -157,7 +157,7 @@ const Contact = () => {
                         <TextField
                           required
                           fullWidth
-                          label="Subject"
+                          label="Sujet"
                           name="subject"
                           value={formData.subject}
                           onChange={handleChange}

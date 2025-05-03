@@ -27,32 +27,32 @@ const Footer = () => {
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" gutterBottom>
-              Dr. Smith Orthodontics
+              Orthodontie Dr. Smith
             </Typography>
             <Typography variant="body2" paragraph>
-              123 Dental Street, Suite 100<br />
-              City, State 12345<br />
-              Phone: (555) 123-4567<br />
-              Email: info@drsmithortho.com
+              123 Rue Dentaire, Suite 100<br />
+              Ville, État 12345<br />
+              Téléphone : (555) 123-4567<br />
+              Email : info@drsmithortho.com
             </Typography>
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" gutterBottom>
-              Quick Links
+              Liens Rapides
             </Typography>
             <Box component="ul" sx={{ listStyle: 'none', p: 0 }}>
               <li>
-                <FooterLink href="/">Home</FooterLink>
+                <FooterLink href="/">Accueil</FooterLink>
               </li>
               <li>
-                <FooterLink href="/about">About</FooterLink>
+                <FooterLink href="/about">À Propos</FooterLink>
               </li>
               <li>
                 <FooterLink href="/services">Services</FooterLink>
               </li>
               <li>
-                <FooterLink href="/appointment">Appointment</FooterLink>
+                <FooterLink href="/appointment">Rendez-vous</FooterLink>
               </li>
             </Box>
           </Grid>
@@ -63,23 +63,23 @@ const Footer = () => {
             </Typography>
             <Box component="ul" sx={{ listStyle: 'none', p: 0 }}>
               <li>
-                <FooterLink href="/services#braces">Traditional Braces</FooterLink>
+                <FooterLink href="/services#braces">Appareil Dentaire Traditionnel</FooterLink>
               </li>
               <li>
                 <FooterLink href="/services#invisalign">Invisalign</FooterLink>
               </li>
               <li>
-                <FooterLink href="/services#retainers">Retainers</FooterLink>
+                <FooterLink href="/services#retainers">Contention</FooterLink>
               </li>
               <li>
-                <FooterLink href="/services#early-treatment">Early Treatment</FooterLink>
+                <FooterLink href="/services#early-treatment">Traitement Précoce</FooterLink>
               </li>
             </Box>
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" gutterBottom>
-              Follow Us
+              Suivez-nous
             </Typography>
             <Box>
               <IconButton
@@ -116,14 +116,14 @@ const Footer = () => {
               </IconButton>
             </Box>
             <Typography variant="body2" sx={{ mt: 2 }}>
-              Stay connected for the latest updates and dental tips
+              Restez connecté pour les dernières mises à jour et conseils dentaires
             </Typography>
           </Grid>
         </Grid>
 
         <Box sx={{ mt: 4, pt: 4, borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}>
           <Typography variant="body2" align="center">
-            © {new Date().getFullYear()} Dr. Smith Orthodontics. All rights reserved.
+            © {new Date().getFullYear()} Orthodontie Dr. Smith. Tous droits réservés.
           </Typography>
         </Box>
       </Container>
